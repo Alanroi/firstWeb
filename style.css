@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("fon.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+header {
+  margin: 0;
+  background-color: black;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  grid-template-columns: (3, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  display: grid;
+}
+header img {
+  width: 100%;
+  height: 100%;
+}
+.one {
+  grid-column: 1/1;
+  grid-row: 1/3;
+}
+.two {
+  grid-column: 2/3;
+  grid-row: 1/1;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+ul {
+  background: orange;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+li {
+  display: inline-block;
+  padding: 30px;
+  font-size: 32px;
+  position: relative;
+  transition: background 0.3s linear;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  background: tomato;
+}
+
+.dropcontent li {
+  display: block;
+  border: black solid;
+}
+
+.dropcontent {
+  min-width: 200px;
+  position: absolute;
+  left: 16px;
+  top: 97px;
+  background: none;
+  display: none;
+}
+
+.dropcontent li a {
+  color: black;
+  background: none;
+}
+
+.drop:hover .dropcontent {
+  display: block;
+  z-index: 10;
+}
+
+/* text in the page*/
+.textpage {
+  position: relative;
+}
+
+#hom,
+#hot,
+#fli,
+#bus,
+#log {
+  position: absolute;
+  width: 100%;
+}
+.home,
+.hotels,
+.flights,
+.buses,
+.login {
+  display: none;
+}
+
+/*form*/
+#log {
+  width: 100%;
+}
+.formlog {
+  background-color: none;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+/*imagenes*/
+
+#hom img {
+  position: relative;
+  z-index: -1;
+  left: 25%;
+}
+
+#hom h1 {
+  text-align: center;
+  font-size: 50px;
+}
+#hom p {
+  text-align: center;
+  font-size: 28px;
+}
