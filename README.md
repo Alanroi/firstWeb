@@ -1,2 +1,2 @@
 # firstWeb
-Trainning in web developmnet
+Trainning in web development
