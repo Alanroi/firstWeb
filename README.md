@@ -1,2 +1,2 @@
 # firstWeb
-Trainning in web development
+this is just a template that i create for a practice in a Trainning in web development
